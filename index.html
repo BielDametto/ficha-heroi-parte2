@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ramon • Êxodo</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="noise"></div>
+
+    <!-- =========================================
+         MENU
+    ========================================== -->
+
+    <header class="topbar">
+
+        <a href="#inicio" class="logo">
+            ÊXODO <span>•</span> RAMON
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menuNavegacao"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menuNavegacao" aria-label="Navegação principal">
+            <a href="#perfil">PERFIL</a>
+            <a href="#atributos">ATRIBUTOS</a>
+            <a href="#combate">COMBATE</a>
+            <a href="#habilidades">HABILIDADES</a>
+            <a href="#inventario">INVENTÁRIO</a>
+            <a href="#historia">HISTÓRIA</a>
+            <a href="#guilda">GUILDA</a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Ativar modo alternativo" aria-pressed="false">
+            <i class="fa-solid fa-moon"></i>
+            <span>MODO NOTURNO</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    ARQUIVO DE PERSONAGEM • ÊXODO
+                </p>
+                <p class="dynamic-greeting" id="saudacaoHero" aria-live="polite"></p>
+
+                <h1>RAMON</h1>
+
+                <p class="hero-role">
+                    REGENTE EMISSOR
+                    <span>•</span>
+                    <span id="nivelHero">NÍVEL 13</span>
+                </p>
+
+                <p class="hero-description">
+                    Biólogo, cientista e explorador. Um homem guiado
+                    pela lógica, pelo conhecimento e por uma busca
+                    incansável pelas respostas deixadas pelo passado.
+                </p>
+
+                <div class="hero-meta">
+
+                    <div>
+                        <span>IDADE</span>
+                        <strong>33</strong>
+                    </div>
+
+                    <div>
+                        <span>VIDA</span>
+                        <strong>235</strong>
+                    </div>
+
+                    <div>
+                        <span>SANIDADE</span>
+                        <strong>67</strong>
+                    </div>
+
+                    <div>
+                        <span>PD</span>
+                        <strong>101</strong>
+                    </div>
+
+                </div>
+
+                <a href="#perfil" class="gold-button">
+                    CONHECER RAMON
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+            </div>
+
+
+            <div class="hero-art">
+
+                <div class="gold-ring"></div>
+
+                <div class="hero-photo">
+
+                    <img
+                        src="Imagens/ramon.jpg"
+                        alt="Retrato de Ramon"
+                    >
+
+                </div>
+
+                <span class="art-label">
+                    RAMON // 013
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PERFIL
+        ========================================== -->
+
+        <section class="section dark-section" id="perfil">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    01 • PERFIL
+                </p>
+
+                <h2>
+                    Um homem que escolheu
+                    compreender o desconhecido.
+                </h2>
+
+                <p>
+                    Ramon é um Regente Emissor de nível 13,
+                    conhecido por sua personalidade lógica,
+                    seu conhecimento científico e sua capacidade
+                    de observar situações de maneira extremamente
+                    analítica.
+                </p>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <article class="info-card">
+
+                    <span class="card-number">01</span>
+
+                    <h3>
+                        IDENTIDADE
+                    </h3>
+
+                    <dl>
+
+                        <div>
+                            <dt>Nome</dt>
+                            <dd>Ramon</dd>
+                        </div>
+
+                        <div>
+                            <dt>Idade</dt>
+                            <dd>33 anos</dd>
+                        </div>
+
+                        <div>
+                            <dt>Altura</dt>
+                            <dd>1,77 m</dd>
+                        </div>
+
+                        <div>
+                            <dt>Peso</dt>
+                            <dd>70 kg</dd>
+                        </div>
+
+                        <div>
+                            <dt>Classe</dt>
+                            <dd>Regente Emissor</dd>
+                        </div>
+
+                        <div>
+                            <dt>Nível</dt>
+                            <dd id="nivelPerfil">13</dd>
+                        </div>
+
+                    </dl>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <span class="card-number">02</span>
+
+                    <h3>
+                        CARACTERÍSTICAS
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Biólogo</span>
+                        <span>Cientista</span>
+                        <span>Explorador</span>
+                        <span>Lógico</span>
+                        <span>Acadêmico</span>
+                        <span>Estratégico</span>
+
+                    </div>
+
+                    <p class="card-text">
+                        Ramon possui cabelos brancos, pele albina
+                        e olhos de coloração incomum. Sua principal
+                        marca é a cicatriz deixada em seu olho após
+                        um acontecimento traumático de sua infância.
+                    </p>
+
+                </article>
+
+
+                <article class="quote-card">
+
+                    <span class="quote-mark">“</span>
+
+                    <p>
+                        Algumas respostas não são encontradas
+                        olhando para o passado.
+                        É preciso caminhar até o desconhecido.
+                    </p>
+
+                    <span>
+                        ARQUIVO DE RAMON
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ATRIBUTOS
+        ========================================== -->
+
+        <section class="section" id="atributos">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    02 • ATRIBUTOS
+                </p>
+
+                <h2>
+                    Capacidades e recursos
+                </h2>
+
+                <p>
+                    Os atributos representam as principais
+                    capacidades físicas e mentais de Ramon.
+                </p>
+
+            </div>
+
+
+            <div class="stat-layout">
+
+                <div class="main-resources">
+
+                    <div class="resource">
+
+                        <div class="resource-top">
+                            <span>VIDA</span>
+                            <strong id="vidaTexto">235 / 235</strong>
+                        </div>
+
+                        <div class="bar">
+                            <i id="vidaBarra" style="width: 100%"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="resource">
+
+                        <div class="resource-top">
+                            <span>SANIDADE</span>
+                            <strong id="sanidadeTexto">67 / 100</strong>
+                        </div>
+
+                        <div class="bar">
+                            <i id="sanidadeBarra" style="width: 67%"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="resource">
+
+                        <div class="resource-top">
+                            <span>PD</span>
+                            <strong>101</strong>
+                        </div>
+
+                        <div class="bar">
+                            <i style="width: 84%"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="resource">
+
+                        <div class="resource-top">
+                            <span>DEFESA</span>
+                            <strong id="defesaValor">25</strong>
+                        </div>
+
+                        <div class="bar">
+                            <i style="width: 72%"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="attribute-grid">
+
+                    <div class="attribute">
+
+                        <span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                            FORÇA
+                        </span>
+
+                        <strong id="forcaValor">0</strong>
+
+                    </div>
+
+
+                    <div class="attribute">
+
+                        <span>
+                            <i class="fa-solid fa-person-running"></i>
+                            AGILIDADE
+                        </span>
+
+                        <strong id="agilidadeValor">4</strong>
+
+                    </div>
+
+
+                    <div class="attribute">
+
+                        <span>
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            VIGOR
+                        </span>
+
+                        <strong id="vigorValor">3</strong>
+
+                    </div>
+
+
+                    <div class="attribute">
+
+                        <span>
+                            <i class="fa-solid fa-brain"></i>
+                            INTELECTO
+                        </span>
+
+                        <strong id="intelectoValor">3</strong>
+
+                    </div>
+
+
+                    <div class="attribute highlight">
+
+                        <span>
+                            <i class="fa-solid fa-eye"></i>
+                            MENTE
+                        </span>
+
+                        <strong id="menteValor">5</strong>
+
+                    </div>
+
+
+                    <div class="attribute">
+
+                        <span>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            DEFESA
+                        </span>
+
+                        <strong id="defesaAtributoPrincipal">25</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="numbers-row">
+
+                <div>
+                    <span>PROFICIÊNCIA</span>
+                    <strong id="nivelProf">NÍVEL 13</strong>
+                </div>
+
+                <div>
+                    <span>DINHEIRO</span>
+                    <strong>92</strong>
+                </div>
+
+                <div>
+                    <span>EXPOSIÇÃO A ZITANIUM</span>
+                    <strong>70%</strong>
+                </div>
+
+            </div>
+
+            <div class="xp-panel">
+                <div class="xp-heading">
+                    <div>
+                        <p class="eyebrow">PROGRESSÃO DO PERSONAGEM</p>
+                        <h3>Experiência de Ramon</h3>
+                    </div>
+                    <div class="xp-status">
+                        <strong id="nivelTexto">NÍVEL 13 / 20</strong>
+                        <strong id="xpTexto">0 / 100 XP</strong>
+                    </div>
+                </div>
+
+                <div
+                    class="xp-track"
+                    id="xpTrack"
+                    role="progressbar"
+                    aria-label="Experiência do personagem"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                >
+                    <span id="xpBarra"></span>
+                </div>
+
+                <div class="xp-actions">
+                    <div class="xp-feedback-area">
+                        <p id="xpFeedback" aria-live="polite">Complete missões para ganhar experiência.</p>
+                        <p id="missaoTexto" class="mission-next">Próxima missão: Reconhecimento da região</p>
+                        <p id="rebirthTexto" class="rebirth-count">Renascimentos: 0</p>
+                    </div>
+                    <div class="xp-buttons">
+                        <button type="button" class="gold-button xp-button" id="ganharXp">
+                            FAZER MISSÃO <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <button type="button" class="xp-reset-button" id="resetXp">
+                            RENASCER / RESETAR PROGRESSÃO
+                        </button>
+                    </div>
+                </div>
+                <p id="atributoFeedback" class="mission-next" aria-live="polite">Próximo atributo: Vigor no nível 14.</p>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             COMBATE
+        ========================================== -->
+
+        <section class="section dark-section" id="combate">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    03 • COMBATE
+                </p>
+
+                <h2>
+                    Conhecimento também pode ser uma arma.
+                </h2>
+
+                <p>
+                    Apesar de sua força física extremamente baixa,
+                    Ramon utiliza técnica, percepção e conhecimento
+                    para sobreviver aos perigos de suas jornadas.
+                </p>
+
+            </div>
+
+
+            <div class="combat-grid">
+
+                <article class="weapon-card">
+
+                    <div class="weapon-image">
+
+                        <div class="weapon-symbol">
+                            <i class="fa-solid fa-khanda"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="weapon-content">
+
+                        <p class="eyebrow">
+                            ARMA PRINCIPAL
+                        </p>
+
+                        <h3>
+                            Katana Grande
+                        </h3>
+
+                        <span class="damage-type">
+                            DANO FÍSICO
+                        </span>
+
+                        <div class="weapon-stats">
+
+                            <div>
+                                <span>TIPO</span>
+                                <strong>Corpo a corpo</strong>
+                            </div>
+
+                            <div>
+                                <span>PORTADOR</span>
+                                <strong>Ramon</strong>
+                            </div>
+
+                            <div>
+                                <span>DEFESA</span>
+                                <strong id="defesaCombate">25</strong>
+                            </div>
+
+                            <div>
+                                <span>ESTILO</span>
+                                <strong>Técnico</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="resistance-card">
+
+                    <p class="eyebrow">
+                        RESISTÊNCIAS
+                    </p>
+
+                    <h3>
+                        Proteções
+                    </h3>
+
+                    <div class="resistance-list">
+
+                        <div>
+                            <span>Dano físico</span>
+                            <strong>15</strong>
+                        </div>
+
+                        <div>
+                            <span>Sangue</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <div>
+                            <span>Conhecimento</span>
+                            <strong>15</strong>
+                        </div>
+
+                        <div>
+                            <span>Morte</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <div>
+                            <span>Energia</span>
+                            <strong>10</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HABILIDADES
+        ========================================== -->
+
+        <section class="section" id="habilidades">
+
+            <div class="section-heading centered">
+
+                <p class="eyebrow">
+                    04 • HABILIDADES
+                </p>
+
+                <h2>
+                    Uma mente preparada para o impossível.
+                </h2>
+
+                <p>
+                    A combinação entre conhecimento, percepção
+                    e experiência transforma Ramon em um personagem
+                    voltado para investigação e estratégia.
+                </p>
+
+            </div>
+
+
+            <div class="ability-grid">
+
+                <article class="ability-card featured">
+
+                    <span class="ability-grade">
+                        REGENTE EMISSOR
+                    </span>
+
+                    <h3>
+                        Emissão
+                    </h3>
+
+                    <p>
+                        A capacidade central de Ramon como Regente,
+                        representando sua relação com as manifestações
+                        e fenômenos presentes no universo de Êxodo.
+                    </p>
+
+                    <div class="ability-levels">
+
+                        <div>
+                            <b>I</b>
+                            <span>INICIAL</span>
+                        </div>
+
+                        <div>
+                            <b>II</b>
+                            <span>DESENVOLVIDO</span>
+                        </div>
+
+                        <div>
+                            <b>III</b>
+                            <span>AVANÇADO</span>
+                        </div>
+
+                        <div>
+                            <b>IV</b>
+                            <span>EXPERIENTE</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="ability-card">
+
+                    <span class="ability-grade">
+                        CONHECIMENTO
+                    </span>
+
+                    <h3>
+                        Análise
+                    </h3>
+
+                    <p>
+                        Ramon observa situações e procura
+                        compreender suas causas antes de agir.
+                    </p>
+
+                </article>
+
+
+                <article class="ability-card">
+
+                    <span class="ability-grade">
+                        EXPLORAÇÃO
+                    </span>
+
+                    <h3>
+                        Investigação
+                    </h3>
+
+                    <p>
+                        Sua experiência como explorador permite
+                        lidar com ambientes desconhecidos e
+                        encontrar informações escondidas.
+                    </p>
+
+                </article>
+
+
+                <article class="ability-card">
+
+                    <span class="ability-grade">
+                        NATURALIDADE
+                    </span>
+
+                    <h3>
+                        Acadêmico
+                    </h3>
+
+                    <p>
+                        Sua formação científica influencia a maneira
+                        como Ramon interpreta o mundo ao seu redor.
+                    </p>
+
+                </article>
+
+
+                <article class="ability-card">
+
+                    <span class="ability-grade">
+                        PERCEPÇÃO
+                    </span>
+
+                    <h3>
+                        Visão Analítica
+                    </h3>
+
+                    <p>
+                        Ramon possui uma percepção incomum,
+                        utilizando sua capacidade de observação
+                        para compreender aquilo que outras pessoas
+                        não conseguem perceber.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INVENTÁRIO
+        ========================================== -->
+
+        <section class="section dark-section" id="inventario">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    05 • INVENTÁRIO
+                </p>
+
+                <h2>
+                    Equipamentos de Ramon
+                </h2>
+
+                <p>
+                    Objetos que acompanham Ramon durante suas
+                    jornadas e representam sua preparação para
+                    situações desconhecidas.
+                </p>
+
+            </div>
+
+
+            <div class="inventory-layout">
+
+                <div class="inventory-content">
+                    <div class="inventory-toolbar">
+                        <p id="inventoryCount" class="inventory-count" aria-live="polite">0 itens no inventário</p>
+                        <div class="inventory-filters" role="group" aria-label="Filtrar inventário">
+                            <button type="button" class="filter-button active" data-filter="todos" aria-pressed="true">TODOS</button>
+                            <button type="button" class="filter-button" data-filter="arma" aria-pressed="false">ARMAS</button>
+                            <button type="button" class="filter-button" data-filter="equipamento" aria-pressed="false">EQUIPAMENTOS</button>
+                            <button type="button" class="filter-button" data-filter="pesquisa" aria-pressed="false">PESQUISA</button>
+                            <button type="button" class="filter-button" data-filter="recurso" aria-pressed="false">RECURSOS</button>
+                        </div>
+                    </div>
+
+                    <div class="item-list" id="itemList" aria-live="polite"></div>
+                </div>
+
+
+                <aside class="inventory-note">
+
+                    <span class="eyebrow">
+                        RECURSOS
+                    </span>
+
+                    <strong>
+                        92
+                    </strong>
+
+                    <p>
+                        Dinheiros disponíveis.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HISTÓRIA
+        ========================================== -->
+
+        <section class="section story-section" id="historia">
+
+            <div class="story-image">
+
+                <img
+                    src="Imagens/Ramon2.jpeg"
+                    alt="Ramon durante sua jornada"
+                >
+
+            </div>
+
+
+            <article class="story-content">
+
+                <p class="eyebrow">
+                    06 • HISTÓRIA
+                </p>
+
+                <h2>
+                    O garoto que buscou respostas.
+                </h2>
+
+
+                <p class="story-preview">
+                    Desde pequeno, Ramon era diferente das outras
+                    crianças. Diagnosticado com heterocromia completa
+                    e uma miopia degenerativa extremamente severa,
+                    passou seus primeiros anos praticamente sem
+                    conseguir enxergar.
+                </p>
+
+
+                <p class="story-preview">
+                    Aos quatro anos, descobriu que conseguia enxergar
+                    utilizando seu olho direito. A partir daquele
+                    momento, começou a perceber o mundo de uma maneira
+                    diferente. Seus gostos diversificados e sua
+                    dificuldade para se enturmar fizeram com que
+                    permanecesse afastado de outras crianças.
+                </p>
+
+
+                <p class="story-extra">
+                    Seu pai era um homem ganancioso que raramente
+                    estava em casa. Quando uma empresa chegou à
+                    pequena cidade prometendo revolucionar a indústria
+                    através de novas tecnologias e minerais extremamente
+                    raros, seu pai enxergou naquela oportunidade uma
+                    forma de enriquecer.
+                </p>
+
+
+                <p class="story-extra">
+                    A exploração desses minerais acabou despertando
+                    algo muito maior. Criaturas que estavam submersas
+                    foram trazidas à superfície, aparentemente
+                    relacionadas às propriedades daquele material.
+                </p>
+
+
+                <p class="story-extra">
+                    Enquanto tudo acontecia, Ramon estava em casa
+                    com sua mãe. O mundo parecia completamente fora
+                    do normal. Nada entrava ou saía da casa, e sua mãe
+                    estava tomada pelo medo.
+                </p>
+
+
+                <p class="story-extra">
+                    Depois de uma sequência de acontecimentos
+                    traumáticos, Ramon perdeu sua família e ficou
+                    sozinho diante de um mundo que já não compreendia.
+                </p>
+
+
+                <p class="story-extra">
+                    Ainda criança, percebeu que simplesmente lamentar
+                    o que havia acontecido não mudaria seu destino.
+                    Em vez disso, decidiu buscar conhecimento.
+                </p>
+
+
+                <p class="story-extra story-ending">
+                    Desde então, Ramon percorre esse novo mundo
+                    procurando respostas para aquilo que destruiu
+                    seu passado — e talvez tentando descobrir o que
+                    realmente existe por trás dos fenômenos que
+                    ninguém consegue explicar.
+                </p>
+
+            
+                <button type="button" class="gold-button story-toggle" id="storyToggle" aria-expanded="false">
+                    VER HISTÓRIA COMPLETA <i class="fa-solid fa-book-open"></i>
+                </button>
+</article>
+
+        </section>
+
+
+        <!-- =========================================
+             GUILDA / CONTATO
+        ========================================== -->
+
+        <section class="section guild-section" id="guilda">
+
+            <div class="section-heading centered">
+
+                <p class="eyebrow">
+                    07 • GUILDA
+                </p>
+
+                <h2>
+                    Conecte-se à Guilda
+                </h2>
+
+                <p>
+                    Acompanhe os registros, projetos e aventuras
+                    da equipe através dos canais da Guilda.
+                </p>
+
+            </div>
+
+
+            <div class="social-grid">
+
+                <a
+                    class="social-card"
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div>
+                        <span>REPOSITÓRIO</span>
+                        <h3>GitHub da Guilda</h3>
+                        <p>
+                            Código, arquivos e projetos relacionados
+                            à equipe.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+
+                </a>
+
+
+                <a
+                    class="social-card"
+                    href="https://discord.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <div class="social-icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+
+                    <div>
+                        <span>COMUNIDADE</span>
+                        <h3>Discord da Guilda</h3>
+                        <p>
+                            Espaço destinado à comunicação e
+                            às aventuras do grupo.
+                        </p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+
+                </a>
+
+            </div>
+
+            <div class="guild-contact-trigger">
+                <p class="guild-contact-intro">
+                    Deseja entrar em contato, apresentar uma ideia ou conversar com os integrantes da Guilda?
+                </p>
+                <button
+                    type="button"
+                    class="gold-button guild-contact-button"
+                    id="abrirFormulario"
+                    aria-expanded="false"
+                    aria-controls="formularioGuilda"
+                >
+                    CONTATAR A GUILDA
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+
+            <div class="guild-form-wrapper" id="formularioGuilda" hidden>
+                <div class="guild-form-heading">
+                    <p class="eyebrow">CANAL DE COMUNICAÇÃO</p>
+                    <h3>Envie sua mensagem</h3>
+                    <p>Preencha os campos abaixo para que a Guilda possa conhecer você e entender sua solicitação.</p>
+                </div>
+
+                <form id="guildForm" novalidate>
+                    <div class="guild-form-grid">
+                        <div class="guild-field">
+                            <label for="guildNome">Nome completo *</label>
+                            <input type="text" id="guildNome" name="nome" placeholder="Como podemos chamar você?" autocomplete="name" required>
+                        </div>
+
+                        <div class="guild-field">
+                            <label for="guildEmail">E-mail *</label>
+                            <input type="email" id="guildEmail" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="guild-field">
+                            <label for="guildTelefone">Telefone (opcional)</label>
+                            <input type="tel" id="guildTelefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel">
+                        </div>
+
+                        <div class="guild-field">
+                            <label for="guildAssunto">Assunto *</label>
+                            <select id="guildAssunto" name="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="Participar da Guilda">Participar da Guilda</option>
+                                <option value="Projeto ou colaboração">Projeto ou colaboração</option>
+                                <option value="Dúvida">Dúvida</option>
+                                <option value="Outro assunto">Outro assunto</option>
+                            </select>
+                        </div>
+
+                        <div class="guild-field guild-field-full">
+                            <label for="guildMensagem">Mensagem *</label>
+                            <textarea id="guildMensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre sua solicitação..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="guild-consent">
+                        <input type="checkbox" id="guildConsentimento" name="consentimento" required>
+                        <label for="guildConsentimento">Li e concordo com o uso dos dados informados exclusivamente para responder a esta solicitação e realizar o contato relacionado a ela. *</label>
+                    </div>
+
+                    <p class="guild-privacy-note">
+                        Informe apenas os dados necessários para o contato. O tratamento das informações deve respeitar a LGPD.
+                    </p>
+
+                    <div id="guildFeedback" class="guild-feedback" role="status" aria-live="polite" hidden></div>
+
+                    <button type="submit" class="gold-button guild-submit-button">
+                        ENVIAR SOLICITAÇÃO
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <p class="guild-required-note">* Campos obrigatórios. O telefone é opcional.</p>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ÊXODO <span>•</span> RAMON
+        </div>
+
+        <p>
+            FICHA DE PERSONAGEM • REGENTE EMISSOR • NÍVEL 13
+        </p>
+
+        <div class="footer-copyright">
+            &copy; 2026 ÊXODO RPG. Todos os direitos reservados.
+            <span>Personagens, universo e materiais originais pertencem aos seus respectivos criadores.</span>
+        </div>
+
+        <div class="footer-right">
+
+            <a href="#inicio">
+                VOLTAR AO TOPO
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
